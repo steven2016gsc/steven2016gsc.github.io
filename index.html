@@ -86,9 +86,15 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            margin: 20px auto;
-            display: block;
             object-fit: cover;
+            float: right;
+            margin: 0 0 20px 30px;
+        }
+
+        .content::after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
         footer {
@@ -104,7 +110,6 @@
 <body>
     <header>
         <h1>Sicong (Steven) Guo</h1>
-        <img src="assets/img/steven_small.jpg" alt="Sicong Guo" class="profile-image">
     </header>
 
     <nav>
@@ -116,6 +121,7 @@
     <div class="divider">* * *</div>
 
     <div class="content" id="home">
+        <img src="assets/img/steven_small.jpg" alt="Sicong Guo" class="profile-image">
         <h2>About Me</h2>
         <p>
             Welcome! I'm Sicong (Steven) Guo, a 2nd-year master student in the Computer Science and Engineering Department at the University of Michigan, Ann Arbor. 
